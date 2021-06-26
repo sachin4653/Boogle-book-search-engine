@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var item, tile, author, publisher, bookLink, bookImg;
+  var item, tile, author, publisher, bookLink, bookImg,description;
   var outputList = document.getElementById("list-output");
   var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
   var apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
@@ -8,6 +8,7 @@ $(document).ready(function() {
 
   //listener for search button
   $("#search").click(function() {
+    
     outputList.innerHTML = ""; //empty html output
     document.body.style.backgroundImage = "url('')";
      searchData = $("#search-box").val();
@@ -51,6 +52,7 @@ $(document).ready(function() {
         author1 = item.volumeInfo.authors;
         publisher1 = item.volumeInfo.publisher;
         bookLink1 = item.volumeInfo.previewLink;
+        book1desc=item.volumeInfo.description;
         bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
@@ -59,6 +61,7 @@ $(document).ready(function() {
         author2 = item2.volumeInfo.authors;
         publisher2 = item2.volumeInfo.publisher;
         bookLink2 = item2.volumeInfo.previewLink;
+        book2desc=item.volumeInfo.description;
         bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
         bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
 

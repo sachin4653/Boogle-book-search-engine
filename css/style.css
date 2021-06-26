@@ -5,8 +5,8 @@
 
 body {
   /* background-color: #76a9e0; */
-  background-image: url("../img/bg-book2.jpg");
-  background-color: #017199;
+  background-image: url("https://media.giphy.com/media/xT77Y1T0zY1gR5qe5O/giphy.gif");
+  background-color: #90794e;
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -15,18 +15,20 @@ body {
   background-size: cover;
 }
 
-.center {
-  margin: auto;
-  margin-top: 200px;
-}
+
+
 
 #header {
+  margin-top:10px;
   font-family: 'Righteous', sans-serif;
-  font-size: 3rem;
+  font-size: 7rem;
+  
+  color:#1e40af
 }
 
 h2 {
   font-family: 'Righteous', sans-serif;
+  
 }
 
 .book-list {

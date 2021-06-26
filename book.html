@@ -16,11 +16,12 @@
         }
         //viewer.load('ISBN:0738531367'); //for test purpose
         viewer.load('ISBN:'+bookIsbn);
+       
       }
       google.books.setOnLoadCallback(initialize);
     </script>    
   </head>
-  <body>
+  <!-- <body style="background-image: url(../Book-Finder/img/bg-book2.jpg);"> -->
     <div class="container">
       <div class="text-center" id="viewerCanvas" style="width: full; height: 600px"></div>
     </div>
